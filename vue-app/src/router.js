@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import PageNotFound from '@/components/page-not-found.vue';
+import Products from './views/products/products.vue'
+import About from './views/about.vue'
+
 
 Vue.use(Router);
 
@@ -15,10 +18,7 @@ export default new Router({
     {
       path: '/products',
       name: 'products',
-      component: () =>
-        import(
-          /* webpackChunkName: "products" */ './views/products/products.vue'
-        ),
+      component: () => Products
     },
     {
       path: '/about',
@@ -26,8 +26,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ './views/about.vue'),
+      component: () => About
     },
     {
       path: '*',

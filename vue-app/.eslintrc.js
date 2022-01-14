@@ -7,7 +7,11 @@ module.exports = {
   plugins: ['prettier'],
   // watch this for explaining why some of this is here
   // https://www.youtube.com/watch?time_continue=239&v=YIvjKId9m2c
+  
   rules: {
+    'prettier/prettier': 0,
+  },
+  /*rules: {
     'no-console': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'consistent-return': 0,
@@ -35,5 +39,5 @@ module.exports = {
     {
       "endOfLine":"auto"
     }
-  ]
+  ]*/
 };
