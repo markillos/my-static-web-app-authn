@@ -30,4 +30,10 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
   },
+  "prettier/prettier": [
+    "error",
+    {
+      "endOfLine":"auto"
+    }
+  ]
 };
